@@ -1,13 +1,16 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-const yourName = "Sam";
-const currentYear = new Date().getFullYear();
+const urlImage = "https://picsum.photos/200";
 
 ReactDOM.render(
   <div>
-    <p>Created by {yourName}</p>
-    <p>Copyright {currentYear}</p>
+    <h1 className="heading">My Favourite Foods</h1>
+    <div>
+      <img className="image" src={urlImage} alt="" />
+      <img className="image" src={urlImage} alt="" />
+      <img className="image" src={urlImage} alt="" />
+    </div>
   </div>,
   document.getElementById("root")
 );
