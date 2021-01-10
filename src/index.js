@@ -1,40 +1,18 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-const urlImage = "https://picsum.photos/200";
-
-const customStyle = {
-  color: "green",
-  fontSize: "20px",
-  border: "1px solid black"
-};
-
-const date = new Date();
-const time = date.getHours();
-let heading = "Good Morning";
-
-if (time >= 12 && time <= 18) {
-  heading = "Good Afternoon";
-  customStyle.color = "green";
-} else if (time >= 18 && time <= 24) {
-  heading = "Good Evening";
-  customStyle.color = "blue";
-} else {
-  heading = "Good Morning";
-  customStyle.color = "red";
+function Heading() {
+  return <h1> My favorite Foods </h1>;
 }
-
-// customStyle.color = "purple";
 
 ReactDOM.render(
   <div>
-    <h1 style={customStyle}>{heading}</h1>
-    <p>bla bla</p>
-    <div>
-      <img className="image" src={urlImage} alt="" />
-      <img className="image" src={urlImage} alt="" />
-      <img className="image" src={urlImage} alt="" />
-    </div>
+    <Heading></Heading>
+    <ul>
+      <li>Becon</li>
+      <li>Jamon</li>
+      <li>Noodles</li>
+    </ul>
   </div>,
   document.getElementById("root")
 );
