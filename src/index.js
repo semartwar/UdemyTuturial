@@ -9,7 +9,7 @@ const customStyle = {
   border: "1px solid black"
 };
 
-const date = new Date(2013, 2, 1, 1, 13);
+const date = new Date();
 const time = date.getHours();
 let heading = "Good Morning";
 
